@@ -1,0 +1,36 @@
+/* 글자 정렬 */
+h1 {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 90px;
+}
+
+/* 띄어쓰기: 자손을 표현하는 css 문법(h1 span => h1 태그의 모든 자손 중 span 태그만 선택)
+   nth-child: 특정 자식 태그를 선택하는 css의 문법
+   부모-자식 태그: 감싸는 상위 태그를 "부모 태그", 안쪽의 태그를 "자식 태그"라고 함
+   자손: 자식의 자식의 자식 등 모든 하위 태그를 포함하는 개념 
+
+   f12(개발자도구)를 통해 element.style에서 color 아무거나 지정 후 스포이드로 색을 추출해 코드값 입력
+*/
+h1 span:nth-child(1) {
+  color:#4485f5;
+}
+h1 span:nth-child(2) {
+  color:#ea4336;
+}
+h1 span:nth-child(3) {
+  color:#f9bc07;
+}
+h1 span:nth-child(4) {
+  color:#4485f5;
+}
+h1 span:nth-child(5) {
+  color:#33a851;
+}
+h1 span:nth-child(6) {
+  color:#ea4336;
+}
+
+.search-bar {
+  width: 500px;
+}
