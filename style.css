@@ -1,8 +1,39 @@
+.top {
+  margin-top: 15px;
+}
+
+.top-left {
+  display: inline-block;
+}
+.top-right {
+  float: right;
+}
+
+.top-left span:nth-child(1) {
+  margin-left:25px;
+  font-size: 13px;
+}
+
+.top-left span:nth-child(2) {
+  margin-left:15px;
+  font-size: 13px;
+}
+
+.top-right span:nth-child(1) {
+  margin-right: 25px;
+  font-size: 12px;
+}
+
+.top-right span:nth-child(2) {
+  margin-right: 15px;
+  font-size: 12px;
+}
+
 /* 글자 정렬 */
-h1 {
+.main {
   text-align: center;
-  margin-top: 150px;
-  font-size: 90px;
+  margin-top: 55px;
+  font-size: 80px;
 }
 
 /* 띄어쓰기: 자손을 표현하는 css 문법(h1 span => h1 태그의 모든 자손 중 span 태그만 선택)
@@ -12,25 +43,56 @@ h1 {
 
    f12(개발자도구)를 통해 element.style에서 color 아무거나 지정 후 스포이드로 색을 추출해 코드값 입력
 */
-h1 span:nth-child(1) {
+.main span:nth-child(1) {
   color:#4485f5;
 }
-h1 span:nth-child(2) {
-  color:#ea4336;
+.main span:nth-child(2) {
+  color:#ea4336;  
 }
-h1 span:nth-child(3) {
+.main span:nth-child(3) {
   color:#f9bc07;
 }
-h1 span:nth-child(4) {
+.main span:nth-child(4) {
   color:#4485f5;
 }
-h1 span:nth-child(5) {
+.main span:nth-child(5) {
   color:#33a851;
 }
-h1 span:nth-child(6) {
+.main span:nth-child(6) {
   color:#ea4336;
 }
 
 .search-bar {
   width: 500px;
+}
+
+.rounded-pill {
+  padding: 8px;
+  padding-left: 40px;
+  padding-right: 80px;
+  width: 500px;
+  margin-top: 5px;
+}
+
+.fa-search {
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  z-index: 1;
+  color: #b4b9be;
+}
+.fa-keyboard {
+  position: absolute;
+  right: 45px;
+  top: 18px;
+  z-index: 1;
+  color: #b4b9be;
+} 
+
+.fa-microphone {
+  position: absolute;
+  right: 15px;
+  top: 18px;
+  z-index: 1;
+  color:#b4b9be;
 }
